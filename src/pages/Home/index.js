@@ -69,7 +69,6 @@ const Home = () => {
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
           placeholder="Insira sua cidade..."
-          onClick={handleSearch}
           onSubmit={handleSearch}
         />
 

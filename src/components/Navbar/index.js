@@ -8,8 +8,12 @@ const NavBar = (props) => {
     <NavBarContainer onSubmit={props.onSubmit}>
       <img src={logo} alt="UaiFood" onClick={() => history.push("/")} />
       <div>
-        <input value={props.inpValue} onChange={props.inpChange} placeholder={props.placeholder}/>
-        <button onClick={props.onClick}> BUSCAR </button>
+        <input
+          value={props.inpValue}
+          onChange={props.inpChange}
+          placeholder={props.placeholder}
+        />
+        <button> BUSCAR </button>
       </div>
     </NavBarContainer>
   );

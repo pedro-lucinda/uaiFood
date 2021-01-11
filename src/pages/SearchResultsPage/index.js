@@ -23,9 +23,7 @@ const SearchResultsPage = () => {
   //filteredList
   useEffect(() => {
     if (restaurantsNearby?.length < 1) {
-      return swal(
-        "Nenhum restaurante foi encontrado, tente outra localização :/"
-      );
+      return swal("Nenhum restaurante foi encontrado, tente outra localização :/");
     }
     setFilteredRes(restaurantsNearby);
     return setRestaurants(restaurantsNearby);
@@ -37,9 +35,9 @@ const SearchResultsPage = () => {
 
   //filter user input
   function handleSearch(e) {
-    e.preventDefault();
+    e.preventDefault()
     userInput === "" && swal("Digite nome de um restaurante para buscar!");
-    const results = filteredRes.filter((res) =>
+    const results = restaurants.filter((res) =>
       res.restaurant.name.toLowerCase().includes(userInput.toLowerCase())
     );
     if (results.length < 1) {
@@ -47,14 +45,13 @@ const SearchResultsPage = () => {
       setUserInput("");
       return setFilteredRes(restaurants);
     }
-    setUserInput("");
     return setFilteredRes(results);
   }
 
   return (
     <SearchResWrapper>
       <NavBar
-        onSubmit={handleSearch}
+      onSubmit={handleSearch}
         inpValue={userInput}
         inpChange={(e) => setUserInput(e.target.value)}
         onClick={handleSearch}

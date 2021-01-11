@@ -18,7 +18,7 @@ export const HomeContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   img {
-    margin-top: 10rem;
+    margin-top: 25vh;
   }
 
   @media only screen and (max-width: 700px) {

@@ -7,7 +7,7 @@ export const useForm = (inintialState) => {
     const newValue = event.target.checked;
     const fieldName = event.target.name;
 
-    setForm({  [fieldName]: newValue });
+    setForm({ [fieldName]: newValue });
   };
 
   return [form, onChangeInput];
