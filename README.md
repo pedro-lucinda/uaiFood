@@ -2,7 +2,7 @@
 A Web Site to search for restaurants in your location and learn more about them.
 
 ## What Works: 
-- Able to Search For Locations.
+- Able to Search for Locations.
 - Able to filter restaurants by name.
 - Able to filter restaurants by starts, price for two and type of cuisine.
 - Resposive for most sizes of screens (smartphones, ipad, pc...)
