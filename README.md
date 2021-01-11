@@ -1,5 +1,5 @@
 # UaiFood
-A restaurant list, you can search for restaurants in a location and learn more about.
+A Web Site to search for restaurants in your location and learn more about them.
 
 ## What Works: 
 - Able to Search For Locations.
