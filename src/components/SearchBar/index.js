@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+//style
+import { SearchButton } from '../smallComponents/SearchButton';
+import { SearchBarContainer } from './style';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
 	return (
-		<div>
-			
-		</div>
-	)
-}
+		<SearchBarContainer className="animateUp" onSubmit={props.onSubmit}>
+			<input
+				value={props.value}
+				onChange={props.onChange}
+				placeholder={props.placeholder}
+			/>
+			<SearchButton onClick={props.onClick}> BUSCAR </SearchButton>
+		</SearchBarContainer>
+	);
+};
 
-export default SearchBar
+export default SearchBar;
