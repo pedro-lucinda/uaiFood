@@ -7,6 +7,9 @@ A restaurant list, you can search for restaurants in a location and learn more a
 - Able to filter restaurants by starts, price for two and type of cuisine.
 - Resposive for most sizes of screens (smartphones, ipad, pc...)
 
+## Flowchart
+https://whimsical.com/uaifood-YX4a5a4fnvBbSY4gG3oGzn
+
 ## Techs
 - ReactJS
 - Styled-Components
